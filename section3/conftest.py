@@ -8,8 +8,8 @@ import time
 def browser():
     print("\nstart browser for test..")
     browser = webdriver.Chrome()
-    browser.implicitly_wait(10)
+    browser.implicitly_wait(20)
     yield browser
     print("\nquit browser..")
-    time.sleep(5)
+    time.sleep(2)
     browser.quit()
